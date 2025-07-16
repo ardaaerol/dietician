@@ -3,104 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Diyetisyen Çağla Dila Erol</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>Diyetisyen Dila Çağla</title>
+  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Montserrat', sans-serif;
-    }
-
-    body {
-      background-color: #fefefe;
-      color: #333;
-    }
-
-    header {
-      background-color: #d2f3db;
-      padding: 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 32px;
-      color: #2e7d32;
-    }
-
-    nav {
-      margin-top: 10px;
-    }
-
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #2e7d32;
-      font-weight: bold;
-    }
-
-    .hero {
-      background: url('https://images.unsplash.com/photo-1556228724-4c2db83b8491') no-repeat center center/cover;
-      height: 400px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-    }
-
-    .hero h2 {
-      font-size: 36px;
-    }
-
-    .section {
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    .section h2 {
-      font-size: 28px;
-      margin-bottom: 20px;
-      color: #2e7d32;
-    }
-
-    .services ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .services li {
-      margin: 10px 0;
-      font-size: 18px;
-    }
-
-    footer {
-      background-color: #d2f3db;
-      text-align: center;
-      padding: 15px;
-      margin-top: 40px;
-      color: #2e7d32;
-    }
-
-    @media screen and (max-width: 768px) {
-      .hero h2 {
-        font-size: 24px;
-        padding: 0 20px;
-        text-align: center;
-      }
-    }
-  </style>
 </head>
 <body>
   <header>
-    <h1>Diyetisyen Çağla Dila Erol</h1>
+    <h1>Diyetisyen Dila Çağla</h1>
     <nav>
       <a href="#">Anasayfa</a>
       <a href="#hakkimda">Hakkımda</a>
       <a href="#hizmetler">Hizmetler</a>
+      <a href="#yorumlar">Yorumlar</a>
       <a href="#iletisim">İletişim</a>
     </nav>
   </header>
@@ -111,26 +25,59 @@
 
   <section class="section" id="hakkimda">
     <h2>Hakkımda</h2>
-    <p>Ben Diyetisyen Çağla Dila Erol. Bilimsel temelli, bireye özel beslenme yaklaşımlarıyla danışanlarıma sağlıklı yaşam alışkanlıkları kazandırmayı amaçlıyorum.</p>
+    <div class="about-container">
+      <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e" alt="Diyetisyen Dila" class="profile-img">
+      <p>Ben Diyetisyen Dila Çağla. Bilimsel temelli, bireye özel beslenme yaklaşımlarıyla danışanlarıma sağlıklı yaşam alışkanlıkları kazandırmayı amaçlıyorum.</p>
+    </div>
   </section>
 
   <section class="section services" id="hizmetler">
     <h2>Hizmetler</h2>
-    <ul>
-      <li>Online Diyet Danışmanlığı</li>
-      <li>Yüz Yüze Görüşme</li>
-      <li>Kilo Kontrol Programları</li>
-      <li>Kurumsal Beslenme Danışmanlığı</li>
-    </ul>
+    <div class="card-grid">
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1048/1048953.png" alt="Online Diyet">
+        <h3>Online Diyet</h3>
+        <p>İnternetten kolay iletişim ile beslenme programı.</p>
+      </div>
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3208/3208721.png" alt="Yüz Yüze Görüşme">
+        <h3>Yüz Yüze Görüşme</h3>
+        <p>Ofis ortamında birebir danışmanlık hizmeti.</p>
+      </div>
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1699/1699868.png" alt="Kilo Kontrolü">
+        <h3>Kilo Kontrol Programı</h3>
+        <p>Kişiye özel kilo verme veya alma süreçleri.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="yorumlar">
+    <h2>Danışan Yorumları</h2>
+    <div class="comment-grid">
+      <div class="comment-card">
+        <p>"Kendimi çok daha enerjik ve mutlu hissediyorum. Dila Hanım harika biri!"</p>
+        <strong>- Elif K.</strong>
+      </div>
+      <div class="comment-card">
+        <p>"Sadece kilo vermedim, yemekle olan ilişkimi de düzelttim. Teşekkürler."</p>
+        <strong>- Mert A.</strong>
+      </div>
+      <div class="comment-card">
+        <p>"İlgisi, bilgisi ve güler yüzüyle harika bir süreç geçirdik."</p>
+        <strong>- Zeynep T.</strong>
+      </div>
+    </div>
   </section>
 
   <section class="section" id="iletisim">
     <h2>İletişim</h2>
     <p>Randevu için <a href="mailto:iletisim@dilacayla.com">iletisim@dilacayla.com</a> adresine e-posta gönderebilir ya da sosyal medya hesaplarımdan ulaşabilirsiniz.</p>
+    <a class="whatsapp-button" href="https://wa.me/905551112233" target="_blank">WhatsApp ile Ulaş</a>
   </section>
 
   <footer>
-    <p>&copy; 2025 Diyetisyen Çağla Dila Erol</p>
+    <p>&copy; 2025 Diyetisyen Dila Çağla</p>
   </footer>
 </body>
 </html>
